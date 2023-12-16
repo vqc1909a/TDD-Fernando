@@ -18,19 +18,52 @@
     yarn dev
     ```
 
+## Instalar prop-types
+
+```javascript
+    yarn add prop-types
+```
+
 ## Ejecutar Tests (https://jestjs.io/docs/next/getting-started)
+
+* Introducción a las pruebas
+
+* AAA
+
+* Arrange - Arreglar
+
+* Act - Actuar
+ 
+* Assert - Afirmar
+ 
+* Primeras pruebas
+ 
+* Jest
+ 
+* Expect
+ 
+* toBe
+ 
+* Enzyme
+ 
+* Comandos útiles en la terminal para pruebas
+ 
+* Revisar elementos renderizados en el componente
+
+* Simular eventos
+
+Esta sección de pruebas es sumamente importante porque nos dará la base de las pruebas que estaremos haciendo durante el curso, las pruebas irán creciendo en complejidad, por lo que les recomiendo que nos aseguremos de comprender bien todos estos conceptos para que nos sea más fácil las siguientes secciones de pruebas.
 
 1. Instalar test en desarrollo
     ```javascript
-        yarn add --dev jest
-        npm install --save-dev jest
+        yarn add --dev jest | npm install --save-dev jest
     ```
-2. Instalar los tipados de jest que me sirven para el autocompetado y cierta sintaxis de typescript
+    ***NOTA: Si estás trabajando con CRA, react ya viene instalado con react-testing-library y jest***
+2. Instalar los tipados de jest que me sirven para el autocompletado de intelligence y cierta sintaxis de typescript
     ```javascript
-        yarn add -D @types/jest
-        npm install -D @types/jest
+        yarn add -D @types/jest | npm install -D @types/jest
     ```
-3. En tu package.json, aumentar lo siguiente, watchAll es para ejecutar todos los tesxts y se actualizen cada vez que cambiemos el contenido de estos
+3. En tu package.json, aumentar lo siguiente, watchAll es para ejecutar todos los tests y se actualizen cada vez que cambiemos el contenido de los tests
     ```javascript
     "scripts": {
         "test": "jest --watchAll"
