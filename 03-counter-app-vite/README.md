@@ -70,7 +70,7 @@ Esta sección de pruebas es sumamente importante porque nos dará la base de las
     },
     ```
 
-4. Necesitas agregar la configuración de babel para que puedas importar en tus scripts
+4. Necesitas agregar la configuración de babel para que puedas hacer test de tus archivos que tiene codigo moderno de javascript como export, import, etc como indica la documentación (https://jestjs.io/docs/getting-started)
 
     Para ello primero necesitas instalas las dependencias de babel para javascript y react
     ```javascript
@@ -80,10 +80,7 @@ Esta sección de pruebas es sumamente importante porque nos dará la base de las
     Luego creas un archivo llamado babel.config.js y dentro de ello agregar la sigueinte configuración según la documentación de jest
     ```javascript
         module.exports = {
-            presets: [
-                ['@babel/preset-env', {targets: {esmodules: true, node: 'current'}}],
-                [ '@babel/preset-react', { runtime: 'automatic' } ],
-            ],
+            presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
         };
     ```
     NOTA: Configure Babel para orientar su versión actual de Node creando un archivo babel.config.js en la raíz de su proyecto (Babel debe transpilar tu código a una versión que sea compatible con el entorno actual de Node.js en el que se está ejecutando tu aplicación. Esto es útil para asegurarse de que el código sea compatible y funcione correctamente en la versión específica de Node.js que estás utilizando) Y el preset @babel/preset-react permite a Babel comprender y transpilar características específicas de React, como el JSX.

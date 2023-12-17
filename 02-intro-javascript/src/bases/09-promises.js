@@ -11,7 +11,7 @@ const getHeroeByIdAsync = (id) => {
             if(heroe){
                 resolve(heroe)
             }else{
-                //if return a reject and in the promise not caught it reject value in the promise trought sentence catch, in the console navigator will show you the error message "Uncaught (in promise)". Then you know the solution for this problem is to caught the reject value in the promise
+                //if return a reject and in the promise not caught the reject value trought sentence catch, in the console navigator will show you the error message "Uncaught (in promise)". Then you know the solution for this problem is to caught the reject value in the promise
                 reject("No se pudo encontrar el héroe")
             }
         }, 2000)

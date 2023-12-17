@@ -26,4 +26,31 @@ const heroes = [
     },
 ];
 
+// const owners = ["DC", "Marvel"];
+
+// First form to export (recommended)
+export const owners = ["DC", "Marvel"];
 export default heroes;
+
+// First form to import
+// import heroes, { owners } from "./data/heroes";
+
+// Second form to export
+// export {
+//     owners,
+//     heroes
+// }
+
+// Second form to import
+// import { heroes, owners } from "./data/heroes";
+
+//Third form to export
+// export {
+//     owners,
+//     heroes as default
+// }
+
+//Third form to import
+// import heroes, {owners} from "./data/heroes";
+
+

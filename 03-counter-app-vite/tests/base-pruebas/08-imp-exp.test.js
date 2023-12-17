@@ -5,6 +5,7 @@ describe('Pruebas en 08-imp-exp.js', () => {
         const id = 1;
         const hero = getHeroeById(id);
         expect(hero).toEqual({ id: 1, name: 'Batman', owner: 'DC' });
+        expect(hero).toBeTruthy();
     })
     test('getHeroeById debe de retornar undefined si no existe', () => {
         const id = 20;
