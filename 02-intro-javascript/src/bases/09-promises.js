@@ -6,7 +6,7 @@ const getHeroeByIdAsync = (id) => {
             //if is not present the callback (resolve or reject) resolve, the promise will not be resolved, it mean, it not return a value
             console.log("2 segundos después")
 
-            const heroe = getHeroeById(1)
+            const heroe = getHeroeById(id)
             
             if(heroe){
                 resolve(heroe)

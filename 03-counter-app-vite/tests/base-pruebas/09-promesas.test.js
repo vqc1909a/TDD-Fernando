@@ -3,6 +3,8 @@ import { getHeroeByIdAsync } from "../../src/base-pruebas/09-promesas";
 describe('Pruebas en 09-proemsas', () => {
     test('getHeroeByIdAsync debe de retornar un héroe', (done) => {
         const id = 1;
+
+        //jest by default is syncronous, so we need to use the sentence done to tell jest that the test is asyncronous
         getHeroeByIdAsync(id)
         .then(hero => {
             expect(hero).toEqual({
