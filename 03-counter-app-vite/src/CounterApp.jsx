@@ -24,7 +24,7 @@ export const CounterApp = ({ value }) => {
             <button aria-label="btn-reset" onClick={ handleReset }> Reset </button>
         </>
     );
-}
+}   
 
 CounterApp.propTypes = {
     value: PropTypes.number.isRequired
