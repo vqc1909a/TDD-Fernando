@@ -13,10 +13,9 @@ describe('Pruebas en 07-deses-arr.js', ()  => {
         expect(letter).toEqual(expect.any( String ));
         expect(number).toEqual(expect.any( Number ));
 
-        //or
-        //Normally toStrictEqual is used to compare object types and their values, but in this case its only compare the object types that equal toEqual
-
         //expect.any(constructor) matches anything that was created with the given constructor. You can use it inside toEqual or toBeCalledWith instead of a literal value.
+
+        //These two assertions are valid because the constructor of the object is String and Number respectively and these two are father of the any constructor of type String or Number.
         expect(letter).toStrictEqual(expect.any( String ));
         expect(number).toStrictEqual(expect.any( Number ));
     })
