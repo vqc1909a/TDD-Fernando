@@ -20,7 +20,7 @@ export const AddCategory = ({handleAddCategory}) => {
     }
   } 
   return (
-    <form onSubmit={handleSubmit}>
+    <form aria-label="form" onSubmit={handleSubmit}>
         <input type="text" placeholder="Buscar gifts" value={inputValue} onChange={handleInputChange}/>
     </form>
   )

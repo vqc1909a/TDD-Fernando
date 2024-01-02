@@ -9,14 +9,14 @@ describe('Pruebas en <FirstApp /> with screen', () => {
     test('should make to match to the snapshot', () => { 
         const {container} = render(<FirstApp title={title} subTitle={subTitle} />)
         expect(container).toMatchSnapshot();
-    })
+    })      
 
     test('should show the message "Hola, Soy Goku"', () => { 
         
         //screen is the object that we be rendering in one each test with the sentence render, of way automatic 
         render(<FirstApp title={title} subTitle={subTitle} />)
         screen.debug(); /* With this sentence we look the component rendered, i same the html generated, in a first instance it's be the tag <body />, but if before we rendering a component, then the screen will be the componente rendering */
-        expect(screen.getByText(title)).toBeTruthy ();
+        expect(screen.getByText(title)).toBeTruthy();
     })
 
     test('should show title in one h1', () => {

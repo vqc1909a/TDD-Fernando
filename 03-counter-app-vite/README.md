@@ -1,6 +1,8 @@
 ## Recomendación
 *Lo que se recomienda es trabajar con yarn mis dependencias locales y con npm mis dependencias globales y crear el proyecto con Vite que es más rápido*
 
+*Puedes correr los test aunque no tengas creada la carpeta 'tests' o algun archivo con la terminación '.test.js', ya que en la terminal te saldra que no se encontraron nigun test*
+
 ## React + Vite: CounterApp
 
 1. Clonar o instalar con el siguiente comando
@@ -15,7 +17,7 @@
 
 3. Correr la aplicación
     ```javascript
-    yarn dev
+    yarn devbabel-jest
     ```
 
 ## Instalar prop-types

@@ -12,3 +12,13 @@ GifItemCategory.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 }
+
+/* Tarea
+
+1. Añadir PropTypes a GifItemCategory
+  a. title obligatorio
+  b. url obligatorio
+
+2. Evaluar el snapshot
+
+*/

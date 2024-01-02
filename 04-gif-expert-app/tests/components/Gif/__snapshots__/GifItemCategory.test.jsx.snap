@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on component GifItemCategory component should make to match to the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Saitama"
+      src="https://giphy.com/saitama.gif"
+    />
+    <p>
+      Saitama
+    </p>
+  </div>
+</div>
+`;
