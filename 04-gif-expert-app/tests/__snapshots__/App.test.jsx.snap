@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on the component App should show the component with the initial state   1`] = `
+<div>
+  <div>
+    <h1>
+      GifExpertApp
+    </h1>
+    <form
+      aria-label="form"
+    >
+      <input
+        placeholder="Buscar gifts"
+        type="text"
+        value=""
+      />
+    </form>
+    <ol>
+      <h3>
+        One Puch
+      </h3>
+      <p>
+        Loading...
+      </p>
+    </ol>
+  </div>
+</div>
+`;

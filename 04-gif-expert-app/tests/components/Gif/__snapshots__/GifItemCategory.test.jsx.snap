@@ -3,6 +3,7 @@
 exports[`tests on component GifItemCategory component should make to match to the snapshot 1`] = `
 <div>
   <div
+    aria-label="card"
     class="card"
   >
     <img

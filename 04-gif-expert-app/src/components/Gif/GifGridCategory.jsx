@@ -3,7 +3,7 @@ import { GifItemCategory } from "../../components/Gif";
 import { useFetchGifs } from "../../hooks/useFetchGifs";
 
 export const GifGridCategory = ({category}) => {  
-  const { gifs, isLoading}  = useFetchGifs(category);
+  const { gifs, isLoading }  = useFetchGifs(category);
 
   return (
     <>
@@ -13,7 +13,7 @@ export const GifGridCategory = ({category}) => {
         ?
         <p>Loading...</p>
         :
-        <div className="card-grid">
+        <div className="card-grid" aria-label="card-grif">
           {gifs.map(image => <GifItemCategory key={image.id} {...image}></GifItemCategory>)}
         </div>
       }
