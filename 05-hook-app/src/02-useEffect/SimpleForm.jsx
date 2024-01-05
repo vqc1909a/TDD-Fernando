@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Message } from "./Message"
 
 export const SimpleForm = () => {
 
@@ -22,17 +23,17 @@ export const SimpleForm = () => {
 
     //The recommended by React is that the useEffect only made one thing, and not many things. It don't care if we have a lot of useEffect or the useEffect has many dependencies 
     useEffect(() => {
-        console.log("useEffect called!")   
+        // console.log("useEffect called!")   
     }, [])
     
     useEffect(() => {
-        console.log("formState changed!")   
+        // console.log("formState changed!")   
     }, [formState])
     
     useEffect(() => {
-        console.log("email changed!")   
+        // console.log("email changed!")   
     }, [email])
-
+    
     return (
     <>
         <h1>Formulario Simple</h1>
@@ -53,8 +54,11 @@ export const SimpleForm = () => {
             name="email"
             value={email}
             onChange={handleInputChange}
-            
         ></input>
+        
+        {
+            username === 'vqc1909a2' && <Message />
+        }
     </>
   )
 }

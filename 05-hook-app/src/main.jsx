@@ -7,6 +7,7 @@ import './index.css'
 import { SimpleForm } from './02-useEffect/SimpleForm.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  //With the React.StrictMode, we can see in the console the warnings of the React, also we can see the value consoles of the components that will show in the navigator for second or more time, because the React.StrictMode execute the render method two times.
   <React.StrictMode>
     <SimpleForm />
   </React.StrictMode>,
