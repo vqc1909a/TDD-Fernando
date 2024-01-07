@@ -184,6 +184,7 @@ Esto ocurre cuando creas el proyecto de react ya sea con CRA o con yarn pero con
 
 Entonces para ello añadimos las siguientes configuracion a nuestro .eslintrc.cjs
 ```javascript
+ rules: { "react/display-name": "off" },
  env: { browser: true, es2020: true, jest: true },
  ignorePatterns: ['dist', '.eslintrc.cjs', 'babel.config.cjs', 
 ```
