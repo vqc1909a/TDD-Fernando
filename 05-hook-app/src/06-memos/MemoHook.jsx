@@ -15,7 +15,7 @@ export const MemoHook = () => {
   const [show, setShow] = useState(true);
 
     //We use useMemo to save the value of the function heavyStuff, so if the value of the counter doesn't change, the function heavyStuff doesn't execute again
-    //useMemo to save the value of the return callback function, so if the value of the counter change, the callback execute again
+    //useMemo to save the value of the return callback function, so if the value of the counter change, the callback will be executed again
   const valueHeavyStuff = useMemo(() => heavyStuff(counter), [counter])
 
   return (
