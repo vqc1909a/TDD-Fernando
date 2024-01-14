@@ -186,7 +186,7 @@ Entonces para ello añadimos las siguientes configuracion a nuestro .eslintrc.cj
 ```javascript
  rules: { "react/display-name": "off" },
  env: { browser: true, es2020: true, jest: true },
- ignorePatterns: ['dist', '.eslintrc.cjs', 'babel.config.cjs', 
+ ignorePatterns: ['dist', '.eslintrc.cjs', 'babel.config.cjs', 'jest.config.cjs'] 
 ```
 
 ***NOTA: SI no te funciona esto y te sigue saliendo que tal cosa no esta definidio, simplemente eliminas el archivo .eslintrc.cjs xq sino no te dejara compilar***

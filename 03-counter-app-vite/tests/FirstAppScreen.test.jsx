@@ -31,7 +31,5 @@ describe('Pruebas en <FirstApp /> with screen', () => {
         expect(screen.getAllByText(subTitle).length).toBe(2);
         expect(screen.getAllByText(subTitle)[0].textContent).toContain(subTitle);
         expect(screen.getAllByText(subTitle)[0].innerHTML).toContain(subTitle);
-
-
     })
 });
