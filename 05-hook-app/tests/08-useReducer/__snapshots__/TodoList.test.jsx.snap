@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on TodoList component should show the component by default 1`] = `
+<div>
+  <ul
+    class="list-group"
+  >
+    <li
+      aria-label="li"
+      class="list-group-item d-flex justify-content-between"
+    >
+      <span
+        aria-label="span"
+        class="align-self-center flex-fill "
+        style="cursor: pointer;"
+      >
+        task1
+      </span>
+      <button
+        aria-label="button"
+        class="btn btn-danger"
+      >
+        Borrar
+      </button>
+    </li>
+    <li
+      aria-label="li"
+      class="list-group-item d-flex justify-content-between"
+    >
+      <span
+        aria-label="span"
+        class="align-self-center flex-fill "
+        style="cursor: pointer;"
+      >
+        task2
+      </span>
+      <button
+        aria-label="button"
+        class="btn btn-danger"
+      >
+        Borrar
+      </button>
+    </li>
+    <li
+      aria-label="li"
+      class="list-group-item d-flex justify-content-between"
+    >
+      <span
+        aria-label="span"
+        class="align-self-center flex-fill "
+        style="cursor: pointer;"
+      >
+        task3
+      </span>
+      <button
+        aria-label="button"
+        class="btn btn-danger"
+      >
+        Borrar
+      </button>
+    </li>
+  </ul>
+</div>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on TodoItem component should show the component by default 1`] = `
+<div>
+  <li
+    aria-label="li"
+    class="list-group-item d-flex justify-content-between"
+  >
+    <span
+      aria-label="span"
+      class="align-self-center flex-fill "
+      style="cursor: pointer;"
+    >
+      task1
+    </span>
+    <button
+      aria-label="button"
+      class="btn btn-danger"
+    >
+      Borrar
+    </button>
+  </li>
+</div>
+`;

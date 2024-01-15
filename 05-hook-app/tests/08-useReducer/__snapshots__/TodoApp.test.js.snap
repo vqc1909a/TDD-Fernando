@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on TodoApp component should show the component by default 1`] = `
+<div>
+  <h1>
+    TodoApp (
+    2
+    ) 
+    <small>
+      pendientes: 
+      1
+    </small>
+  </h1>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col-7"
+    >
+      <ul
+        class="list-group"
+      >
+        <li
+          aria-label="li"
+          class="list-group-item d-flex justify-content-between"
+        >
+          <span
+            aria-label="span"
+            class="align-self-center flex-fill text-decoration-line-through"
+            style="cursor: pointer;"
+          >
+            Todo #1
+          </span>
+          <button
+            aria-label="button"
+            class="btn btn-danger"
+          >
+            Borrar
+          </button>
+        </li>
+        <li
+          aria-label="li"
+          class="list-group-item d-flex justify-content-between"
+        >
+          <span
+            aria-label="span"
+            class="align-self-center flex-fill "
+            style="cursor: pointer;"
+          >
+            Todo #2
+          </span>
+          <button
+            aria-label="button"
+            class="btn btn-danger"
+          >
+            Borrar
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="col-5"
+    >
+      <h4>
+        Agregar TODO
+      </h4>
+      <hr />
+      <form>
+        <input
+          aria-label="input"
+          class="form-control"
+          name="description"
+          placeholder="¿Qué hay que hacer?"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-outline-primary mt-1"
+          type="submit"
+        >
+          Agregar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

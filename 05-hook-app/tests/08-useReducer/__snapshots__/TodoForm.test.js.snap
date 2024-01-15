@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on component TodoForm should show the component by default 1`] = `
+<div>
+  <form>
+    <input
+      aria-label="input"
+      class="form-control"
+      name="description"
+      placeholder="¿Qué hay que hacer?"
+      type="text"
+      value=""
+    />
+    <button
+      class="btn btn-outline-primary mt-1"
+      type="submit"
+    >
+      Agregar
+    </button>
+  </form>
+</div>
+`;

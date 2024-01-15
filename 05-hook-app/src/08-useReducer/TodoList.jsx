@@ -4,7 +4,7 @@ import { TodoItem } from "./TodoItem";
 import React from "react";
 
 export const TodoList = React.memo(({todos, handleDeleteTodo, handleToggleTodo}) => {
-  console.log("Ejecutando todolist")
+  // console.log("Ejecutando todolist")
   return (
     <ul className="list-group">
         {todos.map(todo => (

@@ -29,6 +29,7 @@ export const TodoForm = React.memo(({handleAddTodo}) => {
             type="text" 
             placeholder="¿Qué hay que hacer?"
             className="form-control"
+            aria-label="input"
             name="description"
             value={description}
             onChange={handleInputChange}
