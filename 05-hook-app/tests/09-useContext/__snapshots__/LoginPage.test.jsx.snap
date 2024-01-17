@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests on LoginPage component should show the component by default 1`] = `
+<div>
+  <h1>
+    LoginPage
+  </h1>
+  <hr />
+  <pre
+    aria-label="pre_login"
+  />
+  <button
+    aria-label="button_login"
+    class="btn btn-primary"
+  >
+    Set user
+  </button>
+</div>
+`;

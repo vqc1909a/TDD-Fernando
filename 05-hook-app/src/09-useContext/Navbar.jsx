@@ -10,21 +10,22 @@ export const Navbar = () => {
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <NavLink className={(args) => {
-                            console.log(args)
+                            // console.log(args)
+                            // { isActive: true, isPending: false, isTransitioning: false }
                             return `nav-link ${args.isActive ? 'active' : ''}`
                         }} to="/">Home</NavLink>
                     </li>
 
                     <li className="nav-item">
                         <NavLink className={(args) => {
-                            console.log(args)
+                            // console.log(args)
                             return `nav-link ${args.isActive ? 'active' : ''}`
                         }} to="/about">About</NavLink>
                     </li>
                     <li className="nav-item">
-                        {/* We use the componente NavLink instead use Link because we can add the class "active" when the link is active thanks to the property "isActive" of NavLink component  */}
+                        {/* We use the componente NavLink instead use Link because we can add the class "active" when the link has matched with the path url  */}
                         <NavLink className={(args) => {
-                            console.log(args)
+                            // console.log(args)
                             return `nav-link ${args.isActive ? 'active' : ''}`
                         }
                         } to="/login">Login</NavLink>
