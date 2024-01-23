@@ -17,7 +17,7 @@
 
 3. Correr la aplicación
     ```javascript
-    yarn devbabel-jest
+    yarn dev
     ```
 
 ## Instalar prop-types
@@ -190,6 +190,32 @@ Entonces para ello añadimos las siguientes configuracion a nuestro .eslintrc.cj
 ```
 
 ***NOTA: SI no te funciona esto y te sigue saliendo que tal cosa no esta definidio, simplemente eliminas el archivo .eslintrc.cjs xq sino no te dejara compilar***
+
+3.- Instalar dependencias extras para typescript
+For testing a React project with TypeScript, you'll typically need the following packages:
+
+1. jest: The testing framework.
+2. @types/jest: TypeScript definitions for Jest.
+3. ts-jest: A preprocessor with source map support to help Jest compile TypeScript.
+4. react-testing-library: A simple and complete testing utility that encourages good testing practices.
+5. @testing-library/jest-dom: Custom jest matchers to test the state of the DOM.
+6. @testing-library/user-event: Simulate user events for testing.
+
+You can install these packages with the following command:
+```javascript
+yarn add -D jest @types/jest ts-jest @testing-library/react @testing-library/jest-dom @testing-library/user-event
+```
+
+After installing these packages, you'll need to configure Jest to use ts-jest for TypeScript files. You can do this by creating a jest.config.js file in your project root with the following content:
+
+```javascript
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+};
+```
+***This configuration tells Jest to use ts-jest for TypeScript, sets up the test environment for a browser-like environment (using jsdom), and adds custom jest matchers from jest-dom.***
 
 # jest.config.js:
 
